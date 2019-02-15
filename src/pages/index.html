@@ -7,7 +7,25 @@
 </head>
 <body>
 <main>
+    <section class="container">
+        <div class="current-weather">
+            <div class="row">
+                <h2>Whats the weather like in...</h2>
+                <select aria-label="City Select" class="current-weather__city">
+                </select>
+                <select aria-label="Country Select"  class="current-weather__country">
+                </select>
+            </div>
+        </div>
+    </section>
 
+    <section class="container">
+        <div class="weather-forecast">
+            <div class="row">
+                <h2>Whats the weather like in...</h2>
+            </div>
+        </div>
+    </section>
 </main>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
