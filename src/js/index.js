@@ -3,14 +3,12 @@ import "../scss/style.scss";
 
 // imports
 
-import CurrentWeather from '@/js/components/CurrentWeather';
+import weatherForecast from '@/js/components/WeatherForecast';
 
-const currentWeatherInputs = [
-    '.current-weather__city',
-    '.current-weather__country',
-];
+const currentWeatherInputs = {
+    'country': [
+        '.current-weather__country',
+    ],
+};
 
-new CurrentWeather('.current-weather', currentWeatherInputs, '.current-weather__window');
-
-
-
+new weatherForecast('.current-weather', currentWeatherInputs, '.current-weather__result');

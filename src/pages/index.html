@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
-<body>
-<main>
-    <section class="container">
-        <div class="current-weather">
-            <div class="row">
-                <h2>Whats the weather like in...</h2>
-                <select aria-label="City Select" class="current-weather__city">
-                </select>
-                <select aria-label="Country Select"  class="current-weather__country">
-                </select>
-            </div>
-        </div>
-    </section>
 
-    <section class="container">
-        <div class="weather-forecast">
-            <div class="row">
-                <h2>Whats the weather like in...</h2>
+<body>
+    <main>
+        <section class="container">
+            <div class="current-weather">
+                <div class="row">
+                    <h2>Whats the weather like in...</h2>
+                    <select aria-label="Country Select" class="current-weather__country">
+                        <option value="" disabled selected>Please Select Country</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="current-weather__result">
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
-<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+        </section>
+    </main>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
+
 </html>
