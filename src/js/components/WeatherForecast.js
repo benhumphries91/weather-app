@@ -1,9 +1,9 @@
 import {kelvinToCelsius} from '@/js/helpers/temperatureConversion';
-import { resolve } from 'path';
+import apiKey from '@/js/protected/apikey';
 
 export default class weatherForecast {
     constructor(element, inputs, view) {
-        this.weatherApiKey = '9b4b3411be3ae003bb8da1af64f18a87';
+        this.weatherApiKey = apiKey();
         this.currentWeather = document.querySelector(element);
         this.currentWeatherInputs = inputs;
         this.countryInputs = inputs.country;
